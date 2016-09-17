@@ -20,8 +20,48 @@
                     @Html.ActionLink("3ra Práctica Calificada", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 </div>
                 <nav class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">                        
+                    @if (Request.IsAuthenticated)
+                    {
+                        <ul class="nav navbar-nav">
+                            <li>
+                                @Html.ActionLink("Customers",
+                                                 "Index",
+                                                 new
+                                                 {
+                                                     area = "CustomersDomain",
+                                                     controller = "Customer"
+                                                 })
+                            </li>
+                            <li>
+                                @Html.ActionLink("Employees",
+                                                 "Index",
+                                                 new
+                                                 {
+                                                     area = "EmployeesDomain",
+                                                     controller = "Employee"
+                                                 })
+                            </li>
+                            <li>
+                                @Html.ActionLink("Products",
+                                                 "Index",
+                                                 new
+                                                 {
+                                                     area = "ProductsDomain",
+                                                     controller = "Product"
+                                                 })
+                            </li>
+                            <li>
+                                @Html.ActionLink("Sales",
+                                                 "Index",
+                                                 new
+                                                 {
+                                                     area = "SalesDomain",
+                                                     controller = "Sale"
+                                                 })
+                            </li>
                     </ul>
+                    }
+                    @Html.Partial("_LoginPartial")
                 </nav>
             </div>
         </div>
