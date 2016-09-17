@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace salesdb.Repository
 {
-    class DbExtensions
+    public static class DbExtensions
     {
+        public static IEnumerable<TSource> Page<TSource>(
+            this IEnumerable<TSource> source,
+            int page,
+            int size)
+        {
+            return source.Skip((page - 1) * size).Take(size);
+        }
     }
 }

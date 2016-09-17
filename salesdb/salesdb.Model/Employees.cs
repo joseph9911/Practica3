@@ -1,10 +1,12 @@
-namespace Practica3Modelo
-{
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
+
+namespace salesdb.Model
+{
+    
     public partial class Employees
     {
         public Employees()

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "salesdb.Model", "salesdb.Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "salesdb.Repository", "salesdb.Repository\salesdb.Repository.csproj", "{AD1CFB93-46DC-46F2-BF33-E5823A7A2AB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "salesdb", "salesdb\salesdb.csproj", "{4F75B39D-E3DD-431D-B33A-D8065C058760}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AD1CFB93-46DC-46F2-BF33-E5823A7A2AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD1CFB93-46DC-46F2-BF33-E5823A7A2AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD1CFB93-46DC-46F2-BF33-E5823A7A2AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F75B39D-E3DD-431D-B33A-D8065C058760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F75B39D-E3DD-431D-B33A-D8065C058760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F75B39D-E3DD-431D-B33A-D8065C058760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F75B39D-E3DD-431D-B33A-D8065C058760}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
